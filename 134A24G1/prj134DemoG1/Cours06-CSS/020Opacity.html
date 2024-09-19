@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>L’opacité</title>
+    <style>
+        body {
+            background-image: url('../_images/goodall-C2-715x480.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        p {
+            text-align: center;
+            padding: 10px; /* espace à l’intérieur d’un élément, entre son contenu et sa bordure */
+            margin: 2px; /* marge autour de l'élément (paragraphe) */
+            background-color: blue; /* bleu */
+            color: white;
+        }
+
+        .semi-opaque {
+            opacity: 0.75; /* 75% opaque */
+        }
+        .opaque {
+            opacity: 0.5; /* 50% opaque */
+        }
+        .transparent {
+            opacity: 0.25; /* 25% opaque */
+        }
+        .semi-opaqueRGB {
+            background-color: rgba(0,0,255,.75); /* fond bleu opaque à 75% */
+        }
+        .opaqueRGB {
+            background-color: rgba(0,0,255,.50); /* fond bleu opaque à 50% */
+        }
+        .transparentRGB {
+            background-color: rgba(0,0,255,.25); /* fond bleu opaque à 25% */
+        }
+        </style>
+</head>
+<body>
+    <h1>L’opacité des textes : opacity</h1>
+    <p>Ce paragraphe n'a aucune opacité.</p>
+    <p class="semi-opaque">Ce paragraphe a une opacité de 75%. (opacity: 0.75)</p>
+    <p class="opaque">Ce paragraphe a une opacité de 50%. (opacity: 0.50)</p>
+    <p class="transparent">Ce paragraphe a une opacité de 25%. (opacity: 0.25)</p>
+    <br>
+    <p class="semi-opaqueRGB">
+        Ce paragraphe a un fond bleu avec une opacité 75%. (background-color: rgba(0,0,255,.75))
+    </p>
+    <p class="opaqueRGB">
+        Ce paragraphe a un fond bleu avec une opacité de 50%. (background-color: rgba(0,0,255,.50))
+    </p>
+    <p class="transparentRGB">
+        Ce paragraphe a un fond bleu avec une opacité de 25%. (background-color: rgba(0,0,255,.25))
+    </p>
+</body>
+</html>

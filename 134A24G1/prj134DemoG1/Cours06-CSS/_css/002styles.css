@@ -1,0 +1,14 @@
+/* style des h1 */
+h1 {
+    color: #2fff00;
+}
+
+/* style des paragraphes */
+p {
+    color: blue;
+}
+/* style des liens */
+a {
+    color: green; /* texte vert */
+    font-weight: bold; /* texte gras */
+}

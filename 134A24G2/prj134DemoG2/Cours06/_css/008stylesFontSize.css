@@ -1,0 +1,29 @@
+.pixelAbsolue16 {
+    /* en pixel (taille absolue) */
+    font-size: 16px;
+}
+.pixelAbsolue24 {
+    /* en pixel (taille absolue) */
+    font-size: 24px;
+}
+
+.emRelative {
+    /* en em (taille relative) */
+    /*
+    1em: taille normale
+    >1: pour grossir
+    <1: pour diminuer
+    */
+    font-size: 1.5em;
+}
+
+.pourcentageRelative {
+    /* en % (taille relative) */
+    font-size: 150%;
+}
+
+/* pas fait */
+.exRelative {
+    /* en ex (taille relative) */
+    font-size: 2ex;  /* Même principe que em mais plus petit */
+}

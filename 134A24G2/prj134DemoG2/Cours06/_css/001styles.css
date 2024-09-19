@@ -1,0 +1,8 @@
+body { /* body est le sélecteur - ici on sélectionne le body */
+    background-color: orange;
+}
+
+p { /* p est le sélecteur - ici on sélectionne tout les paragraphes */
+    color: blue;
+    font-size: 16px;
+}

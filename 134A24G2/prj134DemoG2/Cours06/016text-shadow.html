@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de Text-Shadow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .none {
+            text-shadow: none;
+        }
+        .simple-shadow {
+            text-shadow: 3px 0px;
+        }
+        .simple-shadowNegatifBleu {
+            text-shadow: -2px 2px blue;
+        }
+        .blurred-shadow {
+            text-shadow: 2px 2px 5px gray;
+        }
+        .colored-shadow {
+            text-shadow: 2px 2px 5px red;
+        }
+        .colored-shadowCentre {
+            text-shadow: 0px 0px 5px Orange;
+        }
+        .multiple-shadows {
+            text-shadow: 1px 1px 2px black, 0 0 5px blue, 0 0 10px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de Text-Shadow</h1>
+    <p class="none">Sans ombre (none).</p>
+    <p class="simple-shadow">Ombre simple (2px 2px).</p>
+    <p class="simple-shadowNegatifBleu">Ombre simple (-2px 2px) blue.</p>
+    <p class="blurred-shadow">Ombre floue (2px 2px 5px gray).</p>
+    <p class="colored-shadowCentre">Ombre centrée ( 0px 0px 5px Orange).</p>
+    <p class="colored-shadow">Ombre colorée (2px 2px 5px red).</p>
+    <p class="multiple-shadows">
+        Plusieurs ombres (1px 1px 2px black, 0 0 5px blue, 0 0 10px red).
+    </p>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9 - Les tableaux</title>
+    <!-- La balise <style> contient les règles CSS -->
+    <style>
+        /*
+            Tableau avec:
+                - bordure de 1 pixel
+                - les bordures des cellules sont communes
+         */
+        table, th, td {
+            border: 3px solid green;
+            border-collapse: collapse;  /* collapse : chaque cellule a une bordure commune. separate : chaque cellule a sa propre bordure (valeur par défaut) */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Un tableau simple</h2>
+<table>
+    <tr> <!-- table rows -->
+        <td>Première cellule</td> <!-- table data -->
+        <td>Deuxième cellule</td>
+    </tr>
+    <tr>
+        <td>Troisième cellule</td>
+        <td>Quatrième cellule</td>
+    </tr>
+</table>
+
+<h2>Un tableau avec entête</h2>
+<table>
+    <tr>
+        <th>Titre</th>  <!-- table header -->
+        <th>Auteur</th>
+    </tr>
+    <tr>
+        <td>1984</td>
+        <td>George Orwell</td>
+    </tr>
+    <tr>
+        <td>GUERRE ET PAIX</td>
+        <td>Léon Tolstoï</td>
+    </tr>
+    <tr>
+        <td>LA SERVANTE ÉCARLATE</td>
+        <td>Margaret Atwood</td>
+    </tr>
+</table>
+
+<h2>Légende (ou le titre) d'un tableau</h2>
+<table>
+    <caption>Les capitales des pays</caption>
+    <tr>
+        <th>Pays</th>
+        <th>Capitale</th>
+    </tr>
+    <tr>
+        <td>République tchèque</td>
+        <td>Prague</td>
+    </tr>
+    <tr>
+        <td>Cuba</td>
+        <td>La Havane</td>
+    </tr>
+    <tr>
+        <td>Inde</td>
+        <td>New Delhi</td>
+    </tr>
+</table>
+
+<h2>Fusion d'une ligne</h2>
+<table>
+    <caption>
+        Jeux vidéos pour les filles et les garçons
+    </caption>
+    <tr>
+        <th>Nom du jeu</th>
+        <th>Pour les filles ?</th>
+        <th>Pour les garçons ?</th>
+    </tr>
+    <tr>
+        <td>Super Mario Kart</td>
+        <td colspan="2">Pour tout le monde !</td>
+    </tr>
+    <tr>
+        <td>Resident Evil</td>
+        <td>Trop terrifiant</td>
+        <td>Oui</td>
+    </tr>
+    <tr>
+        <td>Les Sims</td>
+        <td>Oui</td>
+        <td>Trop ringard</td>
+    </tr>
+</table>
+
+<h2>Fusion de colonne</h2>
+<table>
+    <caption>
+        Jeux vidéos pour les filles et les garçons
+    </caption>
+    <tr>
+        <th>Nom du jeu</th>
+        <td>Resident Evil</td>
+        <td>Les Sims</td>
+        <td>Super Mario Kart</td>
+    </tr>
+    <tr>
+        <th>Pour les filles ?</th>
+        <td>Trop terrifiant</td>
+        <td>Oui</td>
+        <td rowspan="2">Pour tout le monde !</td>
+    </tr>
+    <tr>
+        <th>Pour les garçons ?</th>
+        <td>Oui</td>
+        <td>Trop ringard</td>
+    </tr>
+</table>
+
+<h2>Fusion lignes et colonnes</h2>
+<table>
+    <caption>
+        Jeux vidéos pour les filles et les garçons
+    </caption>
+    <tr>
+        <th>Nom du jeu</th>
+        <td>Resident Evil</td>
+        <td>Les Sims</td>
+        <td>Super Mario Kart</td>
+    </tr>
+    <tr>
+        <th>Pour les filles ?</th>
+        <td rowspan="2" colspan="3"></td>
+    </tr>
+    <tr>
+        <th>Pour les garçons ?</th>
+    </tr>
+</table>
+
+</body>
+
+</html>

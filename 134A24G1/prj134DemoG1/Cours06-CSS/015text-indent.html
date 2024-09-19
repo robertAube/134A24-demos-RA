@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de text-indent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p {
+            font-size: 24px;
+        }
+        .length {
+            text-indent: 40px;
+        }
+        .lengthNegative {
+            text-indent: -20px;
+        }
+        .percentage {
+            text-indent: 10%;
+        }
+        .hanging {
+            text-indent: 40px hanging;
+        }
+        .each-line {
+            text-indent: 40px each-line;
+        }
+        .hanging-each-line {
+            text-indent: 40px hanging each-line;
+        }
+        .inherit {
+            text-indent: inherit;
+        }
+        .initial {
+            text-indent: initial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de text-indent</h1>
+    <p class="length">1- Indente la première ligne d’une valeur de longueur fixe.</p>
+    <p class="lengthNegative">2- Indente la première ligne d’une valeur de longueur fixe négative.</p>
+    <p class="percentage">3- Indente la première ligne d’une valeur de longueur fixe d’un pourcentage de la largeur du
+        conteneur parent.</p>
+    <p class="hanging">4- Ceci indente toutes les lignes sauf la première un texte (indentation suspendue) de 40
+        pixels.</p>
+    <p class="each-line">5- Ceci est un texte avec une indentation de 40 pixels pour chaque ligne après un saut de ligne
+        forcé.</p>
+    <p class="hanging-each-line">6- Ceci est un texte avec une indentation suspendue de 40 pixels pour chaque ligne
+        après un saut de ligne forcé.</p>
+    <p class="initial">7- Ceci est un texte avec l'indentation initiale (par défaut).</p>
+</body>
+</html>

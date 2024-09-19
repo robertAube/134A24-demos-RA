@@ -1,0 +1,17 @@
+p { /* selecteur basé sur la balise */
+    color: green;
+    font-weight: bold; /* texte gras */
+}
+
+.rouge { /* . sélecteur basé sur la class */
+    color: red;
+    font-weight: normal; /* texte normal */
+}
+
+#paragraphe3 { /* # sélecteur basé sur id */
+    color: blue;
+}
+
+#paragraphe4 { /* # sélecteur basé sur id */
+    color: magenta;
+}
